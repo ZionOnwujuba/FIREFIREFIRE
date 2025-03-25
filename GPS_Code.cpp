@@ -2,39 +2,6 @@
 #include "Arduino.h"
 #include <TinyGPS++.h>
 
-/*
-void setup()
-{
-  Serial.begin(115200);
-  ss.begin(GPSBaud);
-
-  Serial.println(F("DeviceExample.ino"));
-  Serial.println(F("A simple demonstration of TinyGPS++ with an attached GPS module"));
-  Serial.print(F("Testing TinyGPS++ library v. ")); Serial.println(TinyGPSPlus::libraryVersion());
-  Serial.println();
-}
-int flag = 0;
-void loop()
-{
-  if (GPSflag == 1) {
-    delay(5000);
-  }
-  // This sketch displays information every time a new sentence is correctly encoded.
-  while (ss.available() > 0){
-    if (gps.encode(ss.read()))
-    {
-      displayInfo();
-      GPSflag = 1; // new
-    }
-  }
-  //Serial.println(gps.charsProcessed());
-  if (millis() > 5000 && gps.charsProcessed() < 10)
-  {
-    Serial.println(F("No GPS detected: check wiring."));
-    while(true);
-  }
-}
-*/
 double returnLong(TinyGPSPlus gps) {
   if(gps.location.isValid()) {
     return gps.location.lng();
