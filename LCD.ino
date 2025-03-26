@@ -27,7 +27,7 @@ void loop() {
   tft.setTextSize(2); // 1, 2, 3 are common sizes
 
   // Print the message
-  tft.println("Hello, Adafruit ST7735!");
+  tft.println("Hello, Adafruit ST7735.");
 
   delay(5000); // Display for 2 seconds
 }
