@@ -1,5 +1,5 @@
-int buzzerPin = 13;
-int pan3Pin = 3;
+int buzzerPin = 1;
+int pan3Pin = 12;
 bool flag = false;
 
 void setup() {
